@@ -8,12 +8,12 @@ Midterm Project report
     
     
  **FFT Algorithm**
-    The FFT algorithm structure is shown in (link), it decomposes a N-point FFT into half-size's. Our job is to design an 8-points FFT, the size is Fixed, the design cannot handle to transform larger or smaller number of input vector. Our design is divided into 4 stages; The first stage takes the input vector and seperate it so that entries that will have same matrix multiplication are grouped in one half. The formula to find kth and kth+ N/2 of the output vector can be found in () and () respectively. the second stages is where the FFt computation really start; each stage has 2^stage DFT points and 2^stage/2 number of butterflies, see () for reference. 
+    The FFT algorithm structure is shown in https://github.com/freud96/Midterm/blob/main/FFT%20archit.JPG, it decomposes a N-point FFT into half-size's. Our job is to design an 8-points FFT, the size is Fixed, the design cannot handle to transform larger or smaller number of input vector. Our design is divided into 4 stages; The first stage takes the input vector and seperate it so that entries that will have same matrix multiplication are grouped in one half. The formula to find kth and kth+ N/2 of the output vector can be found in https://github.com/freud96/Midterm/blob/main/formula%20fft.JPG and https://github.com/freud96/Midterm/blob/main/fft%20form2.JPG respectively. the second stages is where the FFt computation really start; each stage has 2^stage DFT points and 2^stage/2 number of butterflies, see https://github.com/freud96/Midterm/blob/main/fft%20stages.JPG for reference. 
  
  
 **TLM Platform and HLS' systemC code**
-    For the TLM platform the architecture can be found at (link), the tesbench served  as software will generate vector input, there can be M number of vector. The testbench is connected to the simple bus' target socket by its initial socket, the simple bus is then  connected to the DFT_compute module's target socket by its single port initial socket.
-    The hardware module, for the HLS platform, is connected to the hardware through stratus' point-to-point (cynw_p2p). One output vector from the hardware, one input vector to the hardware, the system is run at time clk, see figure at (link). 
+    For the TLM platform the architecture can be found at https://github.com/freud96/Midterm/blob/main/model%20architecture.png, the tesbench served  as software will generate vector input, there can be M number of vector. The testbench is connected to the simple bus' target socket by its initial socket, the simple bus is then  connected to the DFT_compute module's target socket by its single port initial socket.
+    The hardware module, for the HLS platform, is connected to the hardware through stratus' point-to-point (cynw_p2p). One output vector from the hardware, one input vector to the hardware, the system is run at time clk, see figure at https://github.com/freud96/Midterm/blob/main/HLS_architecture.JPG. 
     We used single precision floating point data despite it make the hardware super large and it takes more time to compute. Adjustment to used Fixed-point instead will be made to be then compared to its counterpart. We try to use sc_uint<T> as much as possible as to reduce the total area.  
     
 
@@ -24,8 +24,4 @@ Midterm Project report
     The problem we had with Fixed point was the accuracy of the output complex vector was low. Hence, we leave this for future work. 
 
 
-    
-
-
-
-
+ 
