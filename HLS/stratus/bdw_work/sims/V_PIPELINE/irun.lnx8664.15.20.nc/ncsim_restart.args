@@ -1,0 +1,40 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
++hubSetOption+libdef=bdw_work/sims/V_PIPELINE/sim_V_PIPELINE.so,argv=out.txt
++hubSetOption+bdr=bdw_work/sims/V_PIPELINE/sim.bdr
++nc64bit
++incdir+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib
++incdir+bdw_work/wrappers
++access+rw
++loadpli1=/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
++ncinput+bdw_work/sims/V_PIPELINE/ncverilog.do
++nclibdirname+bdw_work/sims/V_PIPELINE
++libext+.v
++define+ioConfig
++define+BDW_RTL_DFT_compute_PIPELINE
++nowarn+LIBNOU
+-INPUT
+bdw_work/sims/V_PIPELINE/ncverilog.do
+-NOWARN
+LIBNOU
+-MESSAGES
++EMGRLOG
+bdw_work/sims/V_PIPELINE/bdw_sim_verilog.log
+-XLSTIME
+1650781691
+-XLKEEP
+-XLMODE
+bdw_work/sims/V_PIPELINE/irun.lnx8664.15.20.nc
+-RUNMODE
+-CDSLIB
+bdw_work/sims/V_PIPELINE/irun.lnx8664.15.20.nc/cds.lib
+-HDLVAR
+bdw_work/sims/V_PIPELINE/irun.lnx8664.15.20.nc/hdl.var
+-XLNAME
+irun
+-XLVERSION
+"TOOL:	irun(64)	15.20-s084"
+-XLNAME
+./bdw_work/sims/V_PIPELINE/irun.lnx8664.15.20.nc/ws45_4896

@@ -1,0 +1,20 @@
+
+        SystemC 2.3.1-Accellera --- Feb 14 2019 12:08:38
+        Copyright (c) 1996-2014 by all Contributors,
+        ALL RIGHTS RESERVED
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.12-s100
+**********************************************************************
+* *NOTE: This simulation requires an increased SystemC stack size
+*        because it uses cynw_cm_float in a behavioral simulation.
+*        Be sure that you have added a set_stack_size() call after each
+*        SC_CTHREAD statement for threads that access cynw_cm_float.
+*        For example:
+*          SC_CTHREAD(sys.dft_compute.DFT_compute.computation,clk.pos());
+*          set_stack_size(0x100000);
+*        If the default stack size is used, crashes may result during
+*        simulation.
+*************************************************************************
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+Total run time = 205 ns
+Simulated time == 235 ns

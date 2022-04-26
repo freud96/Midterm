@@ -1,0 +1,102 @@
+Operating system Centos 7,
+ GCC 7.3.0,
+ and Cadence NC/IUS 15.20
+are a supported combination.
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+file: bdw_work/sims/top_V_DPO_AUTO_OP.v
+	module worklib.top:v
+		errors: 0, warnings: 0
+file: bdw_work/wrappers/DFT_compute_cosim.v
+	module worklib.DFT_compute_cosim:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPO_AUTO_OP/DFT_compute_rtl.v
+	module worklib.DFT_compute:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPO_AUTO_OP/v_rtl/DFT_compute_cynw_cm_float_cos_E8_M23_0.v
+	module worklib.DFT_compute_cynw_cm_float_cos_E8_M23_0:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPO_AUTO_OP/v_rtl/DFT_compute_cynw_cm_float_sin_E8_M23_0.v
+	module worklib.DFT_compute_cynw_cm_float_sin_E8_M23_0:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPO_AUTO_OP/v_rtl/DFT_compute_cynw_cm_float_div_ieee_E8_M23_0.v
+	module worklib.DFT_compute_cynw_cm_float_div_ieee_E8_M23_0:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPO_AUTO_OP/v_rtl/DFT_compute_cynw_cm_float_mul_E8_M23_1.v
+	module worklib.DFT_compute_cynw_cm_float_mul_E8_M23_1:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPO_AUTO_OP/v_rtl/DFT_compute_cynw_cm_float_add2_E8_M23_1.v
+	module worklib.DFT_compute_cynw_cm_float_add2_E8_M23_1:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPO_AUTO_OP/v_rtl/DFT_compute_RAM_8X1_1.v
+	module worklib.DFT_compute_RAM_8X1_1:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPO_AUTO_OP/v_rtl/DFT_compute_RAM_8X23_3.v
+	module worklib.DFT_compute_RAM_8X23_3:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPO_AUTO_OP/v_rtl/DFT_compute_RAM_8X8_2.v
+	module worklib.DFT_compute_RAM_8X8_2:v
+		errors: 0, warnings: 0
+ncvlog: *W,LIBNOF: Library file or directory "bdw_work/libs/cynw_cm_float/v_rtl" does not exist.
+ncvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+*** Registering Hub PLI1.0 Interface***
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.DFT_compute:v <0x3e206c16>
+			streams: 202, words: 158735
+		worklib.DFT_compute_RAM_8X1_1:v <0x16da2712>
+			streams:   2, words:   659
+		worklib.DFT_compute_RAM_8X23_3:v <0x551c09e6>
+			streams:   2, words:   844
+		worklib.DFT_compute_RAM_8X8_2:v <0x27ed3a55>
+			streams:   2, words:   702
+		worklib.DFT_compute_cynw_cm_float_add2_E8_M23_1:v <0x4fd710c5>
+			streams:  36, words: 12391
+		worklib.DFT_compute_cynw_cm_float_cos_E8_M23_0:v <0x5d927c33>
+			streams:  41, words: 24297
+		worklib.DFT_compute_cynw_cm_float_div_ieee_E8_M23_0:v <0x7f957f85>
+			streams: 788, words: 190985
+		worklib.DFT_compute_cynw_cm_float_mul_E8_M23_1:v <0x255935c7>
+			streams:  16, words:  4665
+		worklib.DFT_compute_cynw_cm_float_sin_E8_M23_0:v <0x73d67964>
+			streams:  40, words: 24289
+		worklib.top:v <0x4100ef5e>
+			streams: 121, words: 106138
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 14      11
+		Registers:              542     536
+		Scalar wires:          1671       -
+		Vectored wires:         199       -
+		Always blocks:          414     411
+		Initial blocks:           8       8
+		Cont. assignments:      515    1639
+		Pseudo assignments:      48      48
+		Simulation timescale:   1ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+*** Registering Hub PLI1.0 Interface***
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> run
+
+        SystemC 2.3.1-Accellera --- Feb 14 2019 12:08:38
+        Copyright (c) 1996-2014 by all Contributors,
+        ALL RIGHTS RESERVED
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.12-s100
+
+Info: (I804) /IEEE_Std_1666/deprecated: deprecated constructor: sc_time(uint64,bool)
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+Simulation stopped via $stop(1) at time 1152600 PS + 0
+./bdw_work/sims/top_V_DPO_AUTO_OP.v:72 		#100 $stop;
+ncsim> quit
+Total run time = 1120 ns

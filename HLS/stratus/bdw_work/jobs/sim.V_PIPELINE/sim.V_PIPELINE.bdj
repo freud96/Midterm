@@ -1,0 +1,12 @@
+3249
+3252
+ws45
+bdw_work/trace/sim.V_PIPELINE.trace
+2
+0
+0
+0
+1650781597
+1650781695
+make --no-print-directory -f Makefile CWBExec=1 sim_V_PIPELINE
+

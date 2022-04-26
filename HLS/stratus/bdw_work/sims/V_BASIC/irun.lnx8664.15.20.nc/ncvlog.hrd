@@ -1,0 +1,16 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-YDIR
+bdw_work/libs/cynw_cm_float/v_rtl
+-INCDIR
+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib
+-INCDIR
+bdw_work/wrappers
+-LIBEXT
+.v
+-DEFINE
+ioConfig
+-DEFINE
+BDW_RTL_DFT_compute_BASIC

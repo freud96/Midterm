@@ -1,0 +1,12 @@
+17886
+17892
+ws45
+-
+3
+0
+0
+1
+1650788197
+1650788258
+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/bin/bdw_cmd_shell --locallogfile /dev/null -x bdw_server_start
+

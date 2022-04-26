@@ -1,0 +1,124 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Apr 24, 2022 at 17:59:44 CST
+irun
+	+nc64bit
+	+incdir+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib
+	+incdir+bdw_work/wrappers
+	+access+rw
+	+loadpli1=/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
+	+ncinput+bdw_work/sims/V_DPA/ncverilog.do
+	+nclibdirname+bdw_work/sims/V_DPA
+	-f bdw_work/sims/V_DPA/siminfo
+		bdw_work/sims/top_V_DPA.v
+		bdw_work/wrappers/DFT_compute_cosim.v
+		bdw_work/modules/DFT_compute/DPA/DFT_compute_rtl.v
+		bdw_work/modules/DFT_compute/DPA/v_rtl/DFT_compute_cynw_cm_float_cos_E8_M23_0.v
+		bdw_work/modules/DFT_compute/DPA/v_rtl/DFT_compute_cynw_cm_float_sin_E8_M23_0.v
+		bdw_work/modules/DFT_compute/DPA/v_rtl/DFT_compute_cynw_cm_float_div_ieee_E8_M23_0.v
+		bdw_work/modules/DFT_compute/DPA/v_rtl/DFT_compute_cynw_cm_float_mul_E8_M23_1.v
+		bdw_work/modules/DFT_compute/DPA/v_rtl/DFT_compute_cynw_cm_float_add2_E8_M23_1.v
+		bdw_work/modules/DFT_compute/DPA/v_rtl/DFT_compute_RAM_8X1_1.v
+		bdw_work/modules/DFT_compute/DPA/v_rtl/DFT_compute_RAM_8X23_3.v
+		bdw_work/modules/DFT_compute/DPA/v_rtl/DFT_compute_RAM_8X8_2.v
+		-y bdw_work/libs/cynw_cm_float/v_rtl
+	+libext+.v
+	+define+ioConfig
+	+define+BDW_RTL_DFT_compute_DPA
+	+nowarn+LIBNOU
+	+hubSetOption+libdef=bdw_work/sims/V_DPA/sim_V_DPA.so,argv=out.txt
+	+hubSetOption+bdr=bdw_work/sims/V_DPA/sim.bdr
+	-l bdw_work/sims/V_DPA/bdw_sim_verilog.log
+
+   User defined plus("+") options:
+	+hubSetOption+libdef=bdw_work/sims/V_DPA/sim_V_DPA.so,argv=out.txt
+	+hubSetOption+bdr=bdw_work/sims/V_DPA/sim.bdr
+
+file: bdw_work/sims/top_V_DPA.v
+	module worklib.top:v
+		errors: 0, warnings: 0
+file: bdw_work/wrappers/DFT_compute_cosim.v
+	module worklib.DFT_compute_cosim:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPA/DFT_compute_rtl.v
+	module worklib.DFT_compute:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPA/v_rtl/DFT_compute_cynw_cm_float_cos_E8_M23_0.v
+	module worklib.DFT_compute_cynw_cm_float_cos_E8_M23_0:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPA/v_rtl/DFT_compute_cynw_cm_float_sin_E8_M23_0.v
+	module worklib.DFT_compute_cynw_cm_float_sin_E8_M23_0:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPA/v_rtl/DFT_compute_cynw_cm_float_div_ieee_E8_M23_0.v
+	module worklib.DFT_compute_cynw_cm_float_div_ieee_E8_M23_0:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPA/v_rtl/DFT_compute_cynw_cm_float_mul_E8_M23_1.v
+	module worklib.DFT_compute_cynw_cm_float_mul_E8_M23_1:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPA/v_rtl/DFT_compute_cynw_cm_float_add2_E8_M23_1.v
+	module worklib.DFT_compute_cynw_cm_float_add2_E8_M23_1:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPA/v_rtl/DFT_compute_RAM_8X1_1.v
+	module worklib.DFT_compute_RAM_8X1_1:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPA/v_rtl/DFT_compute_RAM_8X23_3.v
+	module worklib.DFT_compute_RAM_8X23_3:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/DFT_compute/DPA/v_rtl/DFT_compute_RAM_8X8_2.v
+	module worklib.DFT_compute_RAM_8X8_2:v
+		errors: 0, warnings: 0
+ncvlog: *W,LIBNOF: Library file or directory "bdw_work/libs/cynw_cm_float/v_rtl" does not exist.
+ncvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+*** Registering Hub PLI1.0 Interface***
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.DFT_compute:v <0x3e206c16>
+			streams: 202, words: 158735
+		worklib.DFT_compute_RAM_8X1_1:v <0x16da2712>
+			streams:   2, words:   659
+		worklib.DFT_compute_RAM_8X23_3:v <0x551c09e6>
+			streams:   2, words:   844
+		worklib.DFT_compute_RAM_8X8_2:v <0x27ed3a55>
+			streams:   2, words:   702
+		worklib.DFT_compute_cynw_cm_float_add2_E8_M23_1:v <0x4fd710c5>
+			streams:  36, words: 12391
+		worklib.DFT_compute_cynw_cm_float_cos_E8_M23_0:v <0x5d927c33>
+			streams:  41, words: 24297
+		worklib.DFT_compute_cynw_cm_float_div_ieee_E8_M23_0:v <0x7f957f85>
+			streams: 788, words: 190985
+		worklib.DFT_compute_cynw_cm_float_mul_E8_M23_1:v <0x255935c7>
+			streams:  16, words:  4665
+		worklib.DFT_compute_cynw_cm_float_sin_E8_M23_0:v <0x73d67964>
+			streams:  40, words: 24289
+		worklib.top:v <0x4100ef5e>
+			streams: 121, words: 106138
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 14      11
+		Registers:              542     536
+		Scalar wires:          1671       -
+		Vectored wires:         199       -
+		Always blocks:          414     411
+		Initial blocks:           8       8
+		Cont. assignments:      515    1639
+		Pseudo assignments:      48      48
+		Simulation timescale:   1ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+*** Registering Hub PLI1.0 Interface***
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> run
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.12-s100
+Simulation stopped via $stop(1) at time 1152600 PS + 0
+./bdw_work/sims/top_V_DPA.v:72 		#100 $stop;
+ncsim> quit
+TOOL:	irun(64)	15.20-s084: Exiting on Apr 24, 2022 at 17:59:46 CST  (total: 00:00:02)

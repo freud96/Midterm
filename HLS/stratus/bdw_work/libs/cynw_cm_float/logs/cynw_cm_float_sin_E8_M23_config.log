@@ -1,0 +1,516 @@
+#############################################################################
+NOTE: ignoring -server flag because no client is registered.
+#############################################################################
+ Starting CellMath Designer (Linux)
+  Time: April 24, 2022. 11:15:47
+  Host: ws45
+  User: m110061422
+  Args: --dofile /usr/cadtool/cadence/STRATUS/cur/share/stratus/tcl/bdw_cmd_shell.tcl /usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/bin/cynw_cm_float_build -config
+
+               CellMath Designer
+               =================
+              Version: 2019.1.01 
+
+  Copyright (c) 2014-2019 Cadence Design Systems.  All rights reserved worldwide.
+  
+  Warning: This computer program is protected by copyright law and 
+  international treaties.  Unauthorized reproduction, modification, 
+  or distribution of this program, or any portion of it, may result 
+  in severe civil and criminal penalties.
+INFO: Using installation at: /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/ (DPEAPI-3)
+  
+  Info: Script "/usr/cadtool/cadence/STRATUS/cur/share/stratus/tcl/bdw_cmd_shell.tcl" run successfully
+
+DEBUG: Setting up to build module cynw_cm_float_sin_E8_M23
+DEBUG: vlog_defines=BDW_BUILD_MODULE=cynw_cm_float_sin_E8_M23 OutExpWidth=8 OutMantWidth=23 InExpWidth=8 InMantWidth=23 IPVersion=2
+DEBUG: techlib=
+DEBUG: clock_period=10.0
+DEBUG: wireload=
+DEBUG: dont_use=
+DEBUG: ignore_scan_cells=0
+DEBUG: optim=ultra
+DEBUG: input_delay=0.0
+DEBUG: max_delay=0.0
+DEBUG: latency=0
+DEBUG: init_interval=1
+DEBUG: dpopt_rtl=0
+DEBUG: dpopt_arch=0
+DEBUG: build_mode=normal
+DEBUG: pipe_delay=0.0
+DEBUG: clock_period overconstraint=0.0
+DEBUG: max_max_delay=11.0
+DEBUG: min_input_delay=-1.0
+DEBUG: neg_slack_allowance=0
+DEBUG: build_allowance=0
+DEBUG: Setting up to build module cynw_cm_float_sin_E8_M23
+DEBUG: vlog_defines=BDW_BUILD_MODULE=cynw_cm_float_sin_E8_M23 OutExpWidth=8 OutMantWidth=23 InExpWidth=8 InMantWidth=23 IPVersion=2
+DEBUG: techlib=
+DEBUG: clock_period=10.0
+DEBUG: wireload=
+DEBUG: dont_use=
+DEBUG: ignore_scan_cells=0
+DEBUG: optim=ultra
+DEBUG: input_delay=0.0
+DEBUG: max_delay=0.0
+DEBUG: latency=0
+DEBUG: init_interval=1
+DEBUG: dpopt_rtl=0
+DEBUG: dpopt_arch=0
+DEBUG: build_mode=normal
+DEBUG: pipe_delay=0.0
+DEBUG: clock_period overconstraint=0.0
+DEBUG: max_max_delay=11.0
+DEBUG: min_input_delay=-1.0
+DEBUG: neg_slack_allowance=0
+DEBUG: build_allowance=0
+DEBUG: cmdesigner script file in logs/cynw_cm_float_sin_E8_M23_config.tcl
+  Warning: No libraries loaded
+DEBUG: Loading generic library
+WARNING: No directories in variable lib_path  (CMDSHELL-10)
+INFO: Reading LBF file '/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/libs/generic.lbf' and building datastructures (LBFPARSE-1)
+INFO: Reading LBF file '/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/libs/gencount.lbf' and building datastructures (LBFPARSE-1)
+INFO: Constructing composite cells (CMDSHELL-4)
+INFO: Library load complete (CMDSHELL-5)
+  Warning: No instances to remove.
+INFO: All parse-trees and netlists were deleted
+INFO: The default veri library search path is now "/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/libs/verilog_packages" (VERI-1508)
+-- Analyzing Verilog file /usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v (VERI-1482)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(28,1): WARNING: use of undefined macro arch (VERI-1158)
+-- Analyzing Verilog file /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/libs/fp_spec.v (VERI-1482)
+--       Resolving module cellmath_fp_unit (VERI-1489)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(33,1): WARNING: port flag is not connected to this instance (VERI-1453)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: compiling module cynw_cm_float_sin (VERI-1018)
+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/cellmath/libs/fp_spec.v(408,8): INFO: compiling module cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23) (VERI-1018)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(32,24): WARNING: actual bit length 37 differs from formal bit length 32 for port X (VERI-1330)
+  Instantiating CellMath module "cellmath_fp_unit" with the desired module parameters
+  New instance "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" of function "cellmath_fp_unit" created.
+  Executing impl ...
+pInExpWidth        = 8
+pInMantWidth       = 23
+pOutExpWidth       = 8
+pOutMantWidth      = 23
+pArch              = 0
+pModuleName        = cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)
+pInName            = A
+pModeName          = mode
+pClockName         = clk
+pEnablePipeName    = enable_pipe
+pOutName           = X
+pFlagName          = flag
+pRegIn             = 0
+pRegOut            = 0
+pTotalRegs         = 0
+pEnablePipe        = 0
+INFO: Instantiating implementation module "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (CMDSHELL-8)
+library/CM/fp_unit/impl/cellmath_fp_unit_bldr.cph(324,0): INFO: Running flattening on "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-23)
+library/CM/fp_unit/impl/cellmath_fp_unit_bldr.cph(324,0): INFO: Running module tidying on "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-38)
+library/CM/fp_unit/impl/cellmath_fp_unit_bldr.cph(324,0): INFO: Minimising constructs in the RTL operator graph of "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-52)
+library/CM/fp_unit/impl/cellmath_fp_unit_bldr.cph(324,0): INFO: Optimizing DataPath in "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-37)
+library/CM/fp_unit/impl/cellmath_fp_unit_bldr.cph(324,0): INFO: Running common subexpression elimination on "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-39)
+library/CM/fp_unit/impl/cellmath_fp_unit_bldr.cph(324,0): INFO: Running mux tidying on "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-35)
+library/CM/fp_unit/impl/cellmath_fp_unit_bldr.cph(324,0): INFO: Optimizing DataPath in "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-37)
+library/CM/fp_unit/impl/cellmath_fp_unit_bldr.cph(324,0): INFO: Minimising constructs in the RTL operator graph of "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-52)
+library/CM/fp_unit/impl/cellmath_fp_unit_bldr.cph(324,0): INFO: Running module tidying on "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-38)
+  Executing bvrl ...
+pInExpWidth        = 8
+pInMantWidth       = 23
+pOutExpWidth       = 8
+pOutMantWidth      = 23
+pArch              = 0
+pModuleName        = cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)
+pInName            = A
+pModeName          = mode
+pClockName         = clk
+pEnablePipeName    = enable_pipe
+pOutName           = X
+pFlagName          = flag
+pRegIn             = 0
+pRegOut            = 0
+pTotalRegs         = 0
+pEnablePipe        = 0
+INFO: Instantiating behavioural module "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (CMDSHELL-7)
+library/CM/fp_unit/bvrl/cellmath_fp_unit_bldr.cph(324,0): INFO: Running flattening on "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-23)
+library/CM/fp_unit/bvrl/cellmath_fp_unit_bldr.cph(324,0): INFO: Running module tidying on "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-38)
+library/CM/fp_unit/bvrl/cellmath_fp_unit_bldr.cph(324,0): INFO: Minimising constructs in the RTL operator graph of "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-52)
+library/CM/fp_unit/bvrl/cellmath_fp_unit_bldr.cph(324,0): INFO: Optimizing DataPath in "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-37)
+library/CM/fp_unit/bvrl/cellmath_fp_unit_bldr.cph(324,0): INFO: Running common subexpression elimination on "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-39)
+library/CM/fp_unit/bvrl/cellmath_fp_unit_bldr.cph(324,0): INFO: Running mux tidying on "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-35)
+library/CM/fp_unit/bvrl/cellmath_fp_unit_bldr.cph(324,0): INFO: Optimizing DataPath in "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-37)
+library/CM/fp_unit/bvrl/cellmath_fp_unit_bldr.cph(324,0): INFO: Minimising constructs in the RTL operator graph of "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-52)
+library/CM/fp_unit/bvrl/cellmath_fp_unit_bldr.cph(324,0): INFO: Running module tidying on "cellmath_fp_unit(pInExpWidth=8,pInMantWidth=23,pOutExpWidth=8,pOutMantWidth=23)" (DPETRANS-38)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Present Design is cynw_cm_float_sin() in library work.
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Converting flipflops in module "cynw_cm_float_sin()"
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Merging control signals into flipflops in module "cynw_cm_float_sin()"
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Pushing attributes in module "cynw_cm_float_sin()"
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Buffering flipflops in module cynw_cm_float_sin
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Transforming module "cynw_cm_float_sin()" pass #0
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Renaming non-user instances in module "cynw_cm_float_sin()"
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Looking for INOUT port conflicts for black box instantations in module "cynw_cm_float_sin()"
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Inverting sequential logic control signals in module "cynw_cm_float_sin()"
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Checking carrysave correctness in module "cynw_cm_float_sin()"
+INFO: Instantiating implementation module "cynw_cm_float_sin" (CMDSHELL-8)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Running flattening on "cynw_cm_float_sin" (DPETRANS-23)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(30,18): WARNING: Output/InOut port 'flag' has been left unconnected. (DPETRANS-32)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Running module tidying on "cynw_cm_float_sin" (DPETRANS-38)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Minimising constructs in the RTL operator graph of "cynw_cm_float_sin" (DPETRANS-52)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Optimizing DataPath in "cynw_cm_float_sin" (DPETRANS-37)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Running common subexpression elimination on "cynw_cm_float_sin" (DPETRANS-39)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Running mux tidying on "cynw_cm_float_sin" (DPETRANS-35)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Optimizing DataPath in "cynw_cm_float_sin" (DPETRANS-37)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Minimising constructs in the RTL operator graph of "cynw_cm_float_sin" (DPETRANS-52)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Running module tidying on "cynw_cm_float_sin" (DPETRANS-38)
+INFO: Instantiating behavioural module "cynw_cm_float_sin" (CMDSHELL-7)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Running flattening on "cynw_cm_float_sin" (DPETRANS-23)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(30,18): WARNING: Output/InOut port 'flag' has been left unconnected. (DPETRANS-32)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Running module tidying on "cynw_cm_float_sin" (DPETRANS-38)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Minimising constructs in the RTL operator graph of "cynw_cm_float_sin" (DPETRANS-52)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Optimizing DataPath in "cynw_cm_float_sin" (DPETRANS-37)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Running common subexpression elimination on "cynw_cm_float_sin" (DPETRANS-39)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Running mux tidying on "cynw_cm_float_sin" (DPETRANS-35)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Optimizing DataPath in "cynw_cm_float_sin" (DPETRANS-37)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Minimising constructs in the RTL operator graph of "cynw_cm_float_sin" (DPETRANS-52)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Running module tidying on "cynw_cm_float_sin" (DPETRANS-38)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "cynw_cm_float_sin" is now selected. (CMDSHELL-12)
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Changing names in the RTL operator graph of "cynw_cm_float_sin" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Info: cynw_cm_float_sin net inst/cellmath__17 inst_cellmath__17 ;
+  Info: cynw_cm_float_sin net inst/cellmath__19 inst_cellmath__19 ;
+  Info: cynw_cm_float_sin net inst/cellmath__24 inst_cellmath__24 ;
+  Info: cynw_cm_float_sin net inst/cellmath__42 inst_cellmath__42 ;
+  Info: cynw_cm_float_sin net inst/cellmath__61 inst_cellmath__61 ;
+  Info: cynw_cm_float_sin net inst/cellmath__66 inst_cellmath__66 ;
+  Info: cynw_cm_float_sin net inst/cellmath__67 inst_cellmath__67 ;
+  Info: cynw_cm_float_sin net inst/cellmath__68 inst_cellmath__68 ;
+  Info: cynw_cm_float_sin net inst/cellmath__69 inst_cellmath__69 ;
+  Info: cynw_cm_float_sin net inst/cellmath__82 inst_cellmath__82 ;
+  Info: cynw_cm_float_sin net inst/cellmath__115__W1 inst_cellmath__115__W1 ;
+  Info: cynw_cm_float_sin net inst/cellmath__195 inst_cellmath__195 ;
+  Info: cynw_cm_float_sin net inst/cellmath__197 inst_cellmath__197 ;
+  Info: cynw_cm_float_sin net inst/cellmath__198 inst_cellmath__198 ;
+  Info: cynw_cm_float_sin net inst/cellmath__200 inst_cellmath__200 ;
+  Info: cynw_cm_float_sin net inst/cellmath__201 inst_cellmath__201 ;
+  Info: cynw_cm_float_sin net inst/cellmath__203 inst_cellmath__203 ;
+  Info: cynw_cm_float_sin net inst/cellmath__210 inst_cellmath__210 ;
+  Info: cynw_cm_float_sin net inst/cellmath__215 inst_cellmath__215 ;
+  Info: cynw_cm_float_sin net inst/cellmath__219 inst_cellmath__219 ;
+  Info: cynw_cm_float_sin net inst/cellmath__223 inst_cellmath__223 ;
+  Info: cynw_cm_float_sin net inst/cellmath__228 inst_cellmath__228 ;
+  Info: cynw_cm_float_sin net inst/cellmath__231 inst_cellmath__231 ;
+  Info: cynw_cm_float_sin net inst/cellmath__237 inst_cellmath__237 ;
+  Info: cynw_cm_float_sin net inst/cellmath__79__46 inst_cellmath__79__46 ;
+  Info: cynw_cm_float_sin net inst/cellmath__197__131 inst_cellmath__197__131 ;
+  Info: cynw_cm_float_sin net inst/cellmath__211__183 inst_cellmath__211__183 ;
+  Info: cynw_cm_float_sin net inst/cellmath__211__182 inst_cellmath__211__182 ;
+  Info: cynw_cm_float_sin net inst/cellmath__216__184 inst_cellmath__216__184 ;
+  Info: cynw_cm_float_sin net inst/cellmath__220__188 inst_cellmath__220__188 ;
+  Info: cynw_cm_float_sin net inst/cellmath__221__195 inst_cellmath__221__195 ;
+  Info: cynw_cm_float_sin net inst/cellmath__223__207 inst_cellmath__223__207 ;
+  Info: cynw_cm_float_sin net inst/cellmath__223__208 inst_cellmath__223__208 ;
+  Info: cynw_cm_float_sin net inst/cellmath__223__199 inst_cellmath__223__199 ;
+  Info: cynw_cm_float_sin net inst/cellmath__224__212 inst_cellmath__224__212 ;
+  Info: cynw_cm_float_sin net inst/cellmath__228__231 inst_cellmath__228__231 ;
+  Info: cynw_cm_float_sin net {inst/blk01_cellmath__39[56:0]} inst_blk01_cellmath__39_56_0_ ;
+  Info: cynw_cm_float_sin net inst/cellmath__216_0 inst_cellmath__216_0 ;
+  Info: cynw_cm_float_sin net {inst/cellmath__220[22:0]} inst_cellmath__220_22_0_ ;
+  Info: cynw_cm_float_sin net {inst/cellmath__220[22:0]_0} inst_cellmath__220_22_0__0 ;
+  Info: cynw_cm_float_sin net {inst/cellmath__220[22:0]_1} inst_cellmath__220_22_0__1 ;
+  Info: cynw_cm_float_sin net {inst/cellmath__48[32:0]} inst_cellmath__48_32_0_ ;
+  Info: cynw_cm_float_sin net inst/cellmath__231__242_0_0_0 inst_cellmath__231__242_0_0_0 ;
+  Info: cynw_cm_float_sin net inst/cellmath__195__80_0_0 inst_cellmath__195__80_0_0 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_0 inst_blk01_cellmath__39__12_10_0 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_1 inst_blk01_cellmath__39__12_10_1 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_2 inst_blk01_cellmath__39__12_10_2 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_3 inst_blk01_cellmath__39__12_10_3 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_4 inst_blk01_cellmath__39__12_10_4 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_5 inst_blk01_cellmath__39__12_10_5 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_6 inst_blk01_cellmath__39__12_10_6 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_7 inst_blk01_cellmath__39__12_10_7 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_8 inst_blk01_cellmath__39__12_10_8 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_9 inst_blk01_cellmath__39__12_10_9 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_10 inst_blk01_cellmath__39__12_10_10 ;
+  Info: cynw_cm_float_sin net inst/cellmath__113_0_0 inst_cellmath__113_0_0 ;
+  Info: cynw_cm_float_sin net inst/cellmath__113_0_1 inst_cellmath__113_0_1 ;
+  Info: cynw_cm_float_sin net inst/cellmath__116__W1_0_0_1_0 inst_cellmath__116__W1_0_0_1_0 ;
+  Info: cynw_cm_float_sin net inst/cellmath__116__W1_0_0_1_1 inst_cellmath__116__W1_0_0_1_1 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__17 inst_cellmath__17_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__19 inst_cellmath__19_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__24 inst_cellmath__24_0 ;
+  Info: cynw_cm_float_sin cell inst/blk01_cellmath__39 inst_blk01_cellmath__39 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__42 inst_cellmath__42_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__48 inst_cellmath__48 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__61 inst_cellmath__61_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__66 inst_cellmath__66_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__67 inst_cellmath__67_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__68 inst_cellmath__68_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__69 inst_cellmath__69_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__79__46_ inst_cellmath__79__46_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__82 inst_cellmath__82_0 ;
+  Info: cynw_cm_float_sin cell inst/invert_7 inst_invert_7 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__195__80__2WWMM_2WWMM inst_cellmath__195__80__2WWMM_2WWMM ;
+  Info: cynw_cm_float_sin cell inst/assign_455 inst_assign_455 ;
+  Info: cynw_cm_float_sin cell inst/assign_457 inst_assign_457 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__198 inst_cellmath__198_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__203 inst_cellmath__203_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__201 inst_cellmath__201_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__200 inst_cellmath__200_0 ;
+  Info: cynw_cm_float_sin cell inst/_32 inst__32 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__211__182_ inst_cellmath__211__182_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__215 inst_cellmath__215_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__216__184_ inst_cellmath__216__184_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__219 inst_cellmath__219_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__220__188_ inst_cellmath__220__188_ ;
+  Info: cynw_cm_float_sin cell inst/_57 inst__57 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__221__195_ inst_cellmath__221__195_ ;
+  Info: cynw_cm_float_sin cell inst/_29 inst__29 ;
+  Info: cynw_cm_float_sin cell inst/_719 inst__719 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__220_2WWMM inst_cellmath__220_2WWMM ;
+  Info: cynw_cm_float_sin cell inst/cellmath__223__207_ inst_cellmath__223__207_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__223__208_ inst_cellmath__223__208_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__223__199_ inst_cellmath__223__199_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__223 inst_cellmath__223_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__224__212_ inst_cellmath__224__212_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__228__231_ inst_cellmath__228__231_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__228 inst_cellmath__228_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__231 inst_cellmath__231_0 ;
+  Info: cynw_cm_float_sin cell inst/_36 inst__36 ;
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Changing names in the RTL operator graph of "cynw_cm_float_sin" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+  Info: cynw_cm_float_sin net inst/cellmath__17 inst_cellmath__17 ;
+  Info: cynw_cm_float_sin net inst/cellmath__19 inst_cellmath__19 ;
+  Info: cynw_cm_float_sin net inst/cellmath__24 inst_cellmath__24 ;
+  Info: cynw_cm_float_sin net inst/cellmath__42 inst_cellmath__42 ;
+  Info: cynw_cm_float_sin net inst/cellmath__61 inst_cellmath__61 ;
+  Info: cynw_cm_float_sin net inst/cellmath__66 inst_cellmath__66 ;
+  Info: cynw_cm_float_sin net inst/cellmath__67 inst_cellmath__67 ;
+  Info: cynw_cm_float_sin net inst/cellmath__68 inst_cellmath__68 ;
+  Info: cynw_cm_float_sin net inst/cellmath__69 inst_cellmath__69 ;
+  Info: cynw_cm_float_sin net inst/cellmath__82 inst_cellmath__82 ;
+  Info: cynw_cm_float_sin net inst/cellmath__115__W1 inst_cellmath__115__W1 ;
+  Info: cynw_cm_float_sin net inst/cellmath__195 inst_cellmath__195 ;
+  Info: cynw_cm_float_sin net inst/cellmath__197 inst_cellmath__197 ;
+  Info: cynw_cm_float_sin net inst/cellmath__198 inst_cellmath__198 ;
+  Info: cynw_cm_float_sin net inst/cellmath__200 inst_cellmath__200 ;
+  Info: cynw_cm_float_sin net inst/cellmath__201 inst_cellmath__201 ;
+  Info: cynw_cm_float_sin net inst/cellmath__210 inst_cellmath__210 ;
+  Info: cynw_cm_float_sin net inst/cellmath__215 inst_cellmath__215 ;
+  Info: cynw_cm_float_sin net inst/cellmath__219 inst_cellmath__219 ;
+  Info: cynw_cm_float_sin net inst/cellmath__223 inst_cellmath__223 ;
+  Info: cynw_cm_float_sin net inst/cellmath__228 inst_cellmath__228 ;
+  Info: cynw_cm_float_sin net inst/cellmath__231 inst_cellmath__231 ;
+  Info: cynw_cm_float_sin net inst/cellmath__237 inst_cellmath__237 ;
+  Info: cynw_cm_float_sin net inst/cellmath__79__46 inst_cellmath__79__46 ;
+  Info: cynw_cm_float_sin net inst/cellmath__197__131 inst_cellmath__197__131 ;
+  Info: cynw_cm_float_sin net inst/cellmath__211__183 inst_cellmath__211__183 ;
+  Info: cynw_cm_float_sin net inst/cellmath__211__182 inst_cellmath__211__182 ;
+  Info: cynw_cm_float_sin net inst/cellmath__216__184 inst_cellmath__216__184 ;
+  Info: cynw_cm_float_sin net inst/cellmath__220__188 inst_cellmath__220__188 ;
+  Info: cynw_cm_float_sin net inst/cellmath__221__195 inst_cellmath__221__195 ;
+  Info: cynw_cm_float_sin net inst/cellmath__223__207 inst_cellmath__223__207 ;
+  Info: cynw_cm_float_sin net inst/cellmath__223__208 inst_cellmath__223__208 ;
+  Info: cynw_cm_float_sin net inst/cellmath__223__199 inst_cellmath__223__199 ;
+  Info: cynw_cm_float_sin net inst/cellmath__224__212 inst_cellmath__224__212 ;
+  Info: cynw_cm_float_sin net inst/cellmath__228__231 inst_cellmath__228__231 ;
+  Info: cynw_cm_float_sin net {inst/blk01_cellmath__39[56:0]} inst_blk01_cellmath__39_56_0_ ;
+  Info: cynw_cm_float_sin net inst/cellmath__216_0 inst_cellmath__216_0 ;
+  Info: cynw_cm_float_sin net {inst/cellmath__220[22:0]} inst_cellmath__220_22_0_ ;
+  Info: cynw_cm_float_sin net {inst/cellmath__220[22:0]_0} inst_cellmath__220_22_0__0 ;
+  Info: cynw_cm_float_sin net {inst/cellmath__220[22:0]_1} inst_cellmath__220_22_0__1 ;
+  Info: cynw_cm_float_sin net {inst/cellmath__48[32:0]} inst_cellmath__48_32_0_ ;
+  Info: cynw_cm_float_sin net inst/cellmath__231__242_0_0_0 inst_cellmath__231__242_0_0_0 ;
+  Info: cynw_cm_float_sin net inst/cellmath__195__80_0_0 inst_cellmath__195__80_0_0 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_0 inst_blk01_cellmath__39__12_10_0 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_1 inst_blk01_cellmath__39__12_10_1 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_2 inst_blk01_cellmath__39__12_10_2 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_3 inst_blk01_cellmath__39__12_10_3 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_4 inst_blk01_cellmath__39__12_10_4 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_5 inst_blk01_cellmath__39__12_10_5 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_6 inst_blk01_cellmath__39__12_10_6 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_7 inst_blk01_cellmath__39__12_10_7 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_8 inst_blk01_cellmath__39__12_10_8 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_9 inst_blk01_cellmath__39__12_10_9 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_10 inst_blk01_cellmath__39__12_10_10 ;
+  Info: cynw_cm_float_sin net inst/cellmath__113_0_0 inst_cellmath__113_0_0 ;
+  Info: cynw_cm_float_sin net inst/cellmath__113_0_1 inst_cellmath__113_0_1 ;
+  Info: cynw_cm_float_sin net inst/cellmath__116__W1_0_0_1_0 inst_cellmath__116__W1_0_0_1_0 ;
+  Info: cynw_cm_float_sin net inst/cellmath__116__W1_0_0_1_1 inst_cellmath__116__W1_0_0_1_1 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__17 inst_cellmath__17_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__19 inst_cellmath__19_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__24 inst_cellmath__24_0 ;
+  Info: cynw_cm_float_sin cell inst/blk01_cellmath__39 inst_blk01_cellmath__39 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__42 inst_cellmath__42_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__48 inst_cellmath__48 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__61 inst_cellmath__61_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__66 inst_cellmath__66_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__67 inst_cellmath__67_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__68 inst_cellmath__68_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__69 inst_cellmath__69_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__79__46_ inst_cellmath__79__46_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__82 inst_cellmath__82_0 ;
+  Info: cynw_cm_float_sin cell inst/invert_7 inst_invert_7 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__195__80__2WWMM_2WWMM inst_cellmath__195__80__2WWMM_2WWMM ;
+  Info: cynw_cm_float_sin cell inst/assign_455 inst_assign_455 ;
+  Info: cynw_cm_float_sin cell inst/assign_457 inst_assign_457 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__198 inst_cellmath__198_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__201 inst_cellmath__201_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__200 inst_cellmath__200_0 ;
+  Info: cynw_cm_float_sin cell inst/_33 inst__33 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__211__182_ inst_cellmath__211__182_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__215 inst_cellmath__215_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__216__184_ inst_cellmath__216__184_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__219 inst_cellmath__219_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__220__188_ inst_cellmath__220__188_ ;
+  Info: cynw_cm_float_sin cell inst/_57 inst__57 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__221__195_ inst_cellmath__221__195_ ;
+  Info: cynw_cm_float_sin cell inst/_30 inst__30 ;
+  Info: cynw_cm_float_sin cell inst/_719 inst__719 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__220_2WWMM inst_cellmath__220_2WWMM ;
+  Info: cynw_cm_float_sin cell inst/cellmath__223__207_ inst_cellmath__223__207_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__223__208_ inst_cellmath__223__208_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__223__199_ inst_cellmath__223__199_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__223 inst_cellmath__223_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__224__212_ inst_cellmath__224__212_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__228__231_ inst_cellmath__228__231_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__228 inst_cellmath__228_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__231 inst_cellmath__231_0 ;
+  Info: cynw_cm_float_sin cell inst/_37 inst__37 ;
+/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/src/cynw_cm_float_sin.v(1,8): INFO: Changing names in the RTL operator graph of "cynw_cm_float_sin" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Info: cynw_cm_float_sin net inst/cellmath__17 inst_cellmath__17 ;
+  Info: cynw_cm_float_sin net inst/cellmath__19 inst_cellmath__19 ;
+  Info: cynw_cm_float_sin net inst/cellmath__24 inst_cellmath__24 ;
+  Info: cynw_cm_float_sin net inst/cellmath__42 inst_cellmath__42 ;
+  Info: cynw_cm_float_sin net inst/cellmath__61 inst_cellmath__61 ;
+  Info: cynw_cm_float_sin net inst/cellmath__66 inst_cellmath__66 ;
+  Info: cynw_cm_float_sin net inst/cellmath__67 inst_cellmath__67 ;
+  Info: cynw_cm_float_sin net inst/cellmath__68 inst_cellmath__68 ;
+  Info: cynw_cm_float_sin net inst/cellmath__69 inst_cellmath__69 ;
+  Info: cynw_cm_float_sin net inst/cellmath__82 inst_cellmath__82 ;
+  Info: cynw_cm_float_sin net inst/cellmath__115__W1 inst_cellmath__115__W1 ;
+  Info: cynw_cm_float_sin net inst/cellmath__195 inst_cellmath__195 ;
+  Info: cynw_cm_float_sin net inst/cellmath__197 inst_cellmath__197 ;
+  Info: cynw_cm_float_sin net inst/cellmath__198 inst_cellmath__198 ;
+  Info: cynw_cm_float_sin net inst/cellmath__200 inst_cellmath__200 ;
+  Info: cynw_cm_float_sin net inst/cellmath__201 inst_cellmath__201 ;
+  Info: cynw_cm_float_sin net inst/cellmath__203 inst_cellmath__203 ;
+  Info: cynw_cm_float_sin net inst/cellmath__210 inst_cellmath__210 ;
+  Info: cynw_cm_float_sin net inst/cellmath__215 inst_cellmath__215 ;
+  Info: cynw_cm_float_sin net inst/cellmath__219 inst_cellmath__219 ;
+  Info: cynw_cm_float_sin net inst/cellmath__223 inst_cellmath__223 ;
+  Info: cynw_cm_float_sin net inst/cellmath__228 inst_cellmath__228 ;
+  Info: cynw_cm_float_sin net inst/cellmath__231 inst_cellmath__231 ;
+  Info: cynw_cm_float_sin net inst/cellmath__237 inst_cellmath__237 ;
+  Info: cynw_cm_float_sin net inst/cellmath__79__46 inst_cellmath__79__46 ;
+  Info: cynw_cm_float_sin net inst/cellmath__197__131 inst_cellmath__197__131 ;
+  Info: cynw_cm_float_sin net inst/cellmath__211__183 inst_cellmath__211__183 ;
+  Info: cynw_cm_float_sin net inst/cellmath__211__182 inst_cellmath__211__182 ;
+  Info: cynw_cm_float_sin net inst/cellmath__216__184 inst_cellmath__216__184 ;
+  Info: cynw_cm_float_sin net inst/cellmath__220__188 inst_cellmath__220__188 ;
+  Info: cynw_cm_float_sin net inst/cellmath__221__195 inst_cellmath__221__195 ;
+  Info: cynw_cm_float_sin net inst/cellmath__223__207 inst_cellmath__223__207 ;
+  Info: cynw_cm_float_sin net inst/cellmath__223__208 inst_cellmath__223__208 ;
+  Info: cynw_cm_float_sin net inst/cellmath__223__199 inst_cellmath__223__199 ;
+  Info: cynw_cm_float_sin net inst/cellmath__224__212 inst_cellmath__224__212 ;
+  Info: cynw_cm_float_sin net inst/cellmath__228__231 inst_cellmath__228__231 ;
+  Info: cynw_cm_float_sin net {inst/blk01_cellmath__39[56:0]} inst_blk01_cellmath__39_56_0_ ;
+  Info: cynw_cm_float_sin net inst/cellmath__216_0 inst_cellmath__216_0 ;
+  Info: cynw_cm_float_sin net {inst/cellmath__220[22:0]} inst_cellmath__220_22_0_ ;
+  Info: cynw_cm_float_sin net {inst/cellmath__220[22:0]_0} inst_cellmath__220_22_0__0 ;
+  Info: cynw_cm_float_sin net {inst/cellmath__220[22:0]_1} inst_cellmath__220_22_0__1 ;
+  Info: cynw_cm_float_sin net {inst/cellmath__48[32:0]} inst_cellmath__48_32_0_ ;
+  Info: cynw_cm_float_sin net inst/cellmath__231__242_0_0_0 inst_cellmath__231__242_0_0_0 ;
+  Info: cynw_cm_float_sin net inst/cellmath__195__80_0_0 inst_cellmath__195__80_0_0 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_0 inst_blk01_cellmath__39__12_10_0 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_1 inst_blk01_cellmath__39__12_10_1 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_2 inst_blk01_cellmath__39__12_10_2 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_3 inst_blk01_cellmath__39__12_10_3 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_4 inst_blk01_cellmath__39__12_10_4 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_5 inst_blk01_cellmath__39__12_10_5 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_6 inst_blk01_cellmath__39__12_10_6 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_7 inst_blk01_cellmath__39__12_10_7 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_8 inst_blk01_cellmath__39__12_10_8 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_9 inst_blk01_cellmath__39__12_10_9 ;
+  Info: cynw_cm_float_sin net inst/blk01_cellmath__39__12_10_10 inst_blk01_cellmath__39__12_10_10 ;
+  Info: cynw_cm_float_sin net inst/cellmath__113_0_0 inst_cellmath__113_0_0 ;
+  Info: cynw_cm_float_sin net inst/cellmath__113_0_1 inst_cellmath__113_0_1 ;
+  Info: cynw_cm_float_sin net inst/cellmath__116__W1_0_0_1_0 inst_cellmath__116__W1_0_0_1_0 ;
+  Info: cynw_cm_float_sin net inst/cellmath__116__W1_0_0_1_1 inst_cellmath__116__W1_0_0_1_1 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__17 inst_cellmath__17_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__19 inst_cellmath__19_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__24 inst_cellmath__24_0 ;
+  Info: cynw_cm_float_sin cell inst/blk01_cellmath__39 inst_blk01_cellmath__39 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__42 inst_cellmath__42_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__48 inst_cellmath__48 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__61 inst_cellmath__61_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__66 inst_cellmath__66_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__67 inst_cellmath__67_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__68 inst_cellmath__68_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__69 inst_cellmath__69_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__79__46_ inst_cellmath__79__46_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__82 inst_cellmath__82_0 ;
+  Info: cynw_cm_float_sin cell inst/invert_7 inst_invert_7 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__195__80__2WWMM_2WWMM inst_cellmath__195__80__2WWMM_2WWMM ;
+  Info: cynw_cm_float_sin cell inst/assign_455 inst_assign_455 ;
+  Info: cynw_cm_float_sin cell inst/assign_457 inst_assign_457 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__198 inst_cellmath__198_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__203 inst_cellmath__203_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__201 inst_cellmath__201_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__200 inst_cellmath__200_0 ;
+  Info: cynw_cm_float_sin cell inst/_32 inst__32 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__211__182_ inst_cellmath__211__182_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__215 inst_cellmath__215_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__216__184_ inst_cellmath__216__184_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__219 inst_cellmath__219_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__220__188_ inst_cellmath__220__188_ ;
+  Info: cynw_cm_float_sin cell inst/_57 inst__57 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__221__195_ inst_cellmath__221__195_ ;
+  Info: cynw_cm_float_sin cell inst/_29 inst__29 ;
+  Info: cynw_cm_float_sin cell inst/_719 inst__719 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__220_2WWMM inst_cellmath__220_2WWMM ;
+  Info: cynw_cm_float_sin cell inst/cellmath__223__207_ inst_cellmath__223__207_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__223__208_ inst_cellmath__223__208_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__223__199_ inst_cellmath__223__199_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__223 inst_cellmath__223_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__224__212_ inst_cellmath__224__212_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__228__231_ inst_cellmath__228__231_ ;
+  Info: cynw_cm_float_sin cell inst/cellmath__228 inst_cellmath__228_0 ;
+  Info: cynw_cm_float_sin cell inst/cellmath__231 inst_cellmath__231_0 ;
+  Info: cynw_cm_float_sin cell inst/_36 inst__36 ;
+  Writing Verilog Bvrl Model cynw_cm_float_sin for output to /home/m110/m110061422/EE6470/mid_v3/stratus/bdw_work/libs/cynw_cm_float/bdw_work/libs/cynw_cm_float/bdw_work/libs/cynw_cm_float/.scratch.txt
+  Write complete.
+  Writing C Model cynw_cm_float_sin for output to c_parts/cynw_cm_float_sin_E8_M23.cc
+  Write complete.
+  Writing Verilog Bvrl Model cynw_cm_float_sin for output to /home/m110/m110061422/EE6470/mid_v3/stratus/bdw_work/libs/cynw_cm_float/bdw_work/libs/cynw_cm_float/v_rtl/cynw_cm_float_sin_E8_M23.v
+  Write complete.
+invalid command name "__bdw_not_good_tcl__"
+    while executing
+"[bdw_cause_recognizable_error_command]"
+    ("eval" body line 1)
+    invoked from within
+"eval {[bdw_cause_recognizable_error_command]}"
+    (procedure "exit" line 13)
+    invoked from within
+"exit [end_session session]"
+    (file "/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/bin/bdw_cmd_build" line 123)
+    invoked from within
+"source $env(STRATUS_HOME)/tools.lnx86/stratus/bin/bdw_cmd_build"
+    invoked from within
+"set res [source $env(STRATUS_HOME)/tools.lnx86/stratus/bin/bdw_cmd_build]"
+    (file "/usr/cadtool/cadence/STRATUS/STRATUS_19.12.100/share/stratus/cynware/cynw_cm_float/bin/cynw_cm_float_build" line 68)
+INFO: All parse-trees and netlists were deleted
+
+Thank you.

@@ -1,0 +1,12 @@
+bdw_work/sims/top_V_DPO_AUTO_OP.v
+bdw_work/wrappers/DFT_compute_cosim.v
+bdw_work/modules/DFT_compute/DPO_AUTO_OP/DFT_compute_rtl.v
+bdw_work/modules/DFT_compute/DPO_AUTO_OP/v_rtl/DFT_compute_cynw_cm_float_cos_E8_M23_0.v
+bdw_work/modules/DFT_compute/DPO_AUTO_OP/v_rtl/DFT_compute_cynw_cm_float_sin_E8_M23_0.v
+bdw_work/modules/DFT_compute/DPO_AUTO_OP/v_rtl/DFT_compute_cynw_cm_float_div_ieee_E8_M23_0.v
+bdw_work/modules/DFT_compute/DPO_AUTO_OP/v_rtl/DFT_compute_cynw_cm_float_mul_E8_M23_1.v
+bdw_work/modules/DFT_compute/DPO_AUTO_OP/v_rtl/DFT_compute_cynw_cm_float_add2_E8_M23_1.v
+bdw_work/modules/DFT_compute/DPO_AUTO_OP/v_rtl/DFT_compute_RAM_8X1_1.v
+bdw_work/modules/DFT_compute/DPO_AUTO_OP/v_rtl/DFT_compute_RAM_8X23_3.v
+bdw_work/modules/DFT_compute/DPO_AUTO_OP/v_rtl/DFT_compute_RAM_8X8_2.v
+-y bdw_work/libs/cynw_cm_float/v_rtl

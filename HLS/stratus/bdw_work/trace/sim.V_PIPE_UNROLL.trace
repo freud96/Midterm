@@ -1,0 +1,65 @@
+make[2]: Nothing to be done for `bdw_work/wrappers/DFT_compute_wrap.h'.
+make --no-print-directory -f Makefile -j1 hls_DFT_compute_PIPE_UNROLL
+make[3]: `bdw_work/modules/DFT_compute/PIPE_UNROLL/DFT_compute_rtl.cpp' is up to date.
+make[3]: `bdw_work/modules/DFT_compute/PIPE_UNROLL/DFT_compute_rtl.v' is up to date.
+Generating dependencies for ../Testbench.cpp
+/usr/cadtool/cadence/STRATUS/cur/bin/bdw_shell /usr/cadtool/cadence/STRATUS/cur/share/stratus/tcl/bdw_siminfo.tcl project.tcl V_PIPE_UNROLL
+make[3]: Nothing to be done for `bdw_work/wrappers/DFT_compute_wrap.h'.
+make[3]: `bdw_work/modules/DFT_compute/PIPE_UNROLL/DFT_compute_rtl.v' is up to date.
+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/gcc/4.8/bin/g++ -o bdw_work/objs/Testbench.o -I./ -Ibdw_work/wrappers  -I/usr/cadtool/cadence/STRATUS/cur/share/stratus/cynware/cynw_cm_float/c_parts -I.. -c -DCLOCK_PERIOD=5 -g    -fPIC  -I/usr/cadtool/cadence/STRATUS/cur/share/stratus/include -I/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/systemc/2.3.1/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 ../Testbench.cpp
+/usr/cadtool/cadence/STRATUS/cur/bin/bdw_wrapgen -project project.tcl -simconfig V_PIPE_UNROLL -top top
+make objs/libcynw_cm_float.a
+make[5]: `objs/libcynw_cm_float.a' is up to date.
+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/gcc/4.8/bin/g++ -shared -Wl,-Bsymbolic  \
+        -Wl,-rpath,/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit \
+        -Wl,-rpath,/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/lib/64bit \
+        -Wl,-rpath,/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/systemc/2.3.1/lib-linux64 \
+	-o bdw_work/sims/V_PIPE_UNROLL/sim_V_PIPE_UNROLL.so  \
+	bdw_work/modules/DFT_compute/PIPE_UNROLL/DFT_compute.o bdw_work/objs/main.o bdw_work/objs/Testbench.o bdw_work/objs/System.o \
+	 \
+	 \
+        bdw_work/libesc/libesc.a \
+	bdw_work/libs/cynw_cm_float/objs/libcynw_cm_float.a \
+	-L /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/lib/64bit -L /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit  -L /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/systemc/2.3.1/lib-linux64 -lscv -lsystemc  -lbdw_st   \
+	-lm -lcrypt -ldl \
+	2>&1 | perl /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/hub_link_filter.pl
+make --no-print-directory -f Makefile incisive
+/usr/cadtool/cadence/STRATUS/cur/bin/bdw_wrapgen -project project.tcl -simconfig V_PIPE_UNROLL -top top
+make objs/libcynw_cm_float.a
+make[5]: `objs/libcynw_cm_float.a' is up to date.
+
+BDW_SIM_CONFIG_DIR=bdw_work/sims/V_PIPE_UNROLL \
+bdw_exec -jobproject project.tcl -job sim.V_PIPE_UNROLL.s \
+/usr/cadtool/cadence/STRATUS/cur/bin/hub_ncverilog \
+	-f bdw_work/sims/V_PIPE_UNROLL/siminfo \
++libext+.v   +define+ioConfig +define+BDW_RTL_DFT_compute_PIPE_UNROLL \
+	+nowarn+LIBNOU  +hubSetOption+libdef=bdw_work/sims/V_PIPE_UNROLL/sim_V_PIPE_UNROLL.so,argv="out.txt" +hubSetOption+bdr=bdw_work/sims/V_PIPE_UNROLL/sim.bdr \
+	-l bdw_work/sims/V_PIPE_UNROLL/bdw_sim_verilog.log \
+	2>&1 | tee bdw_work/sims/V_PIPE_UNROLL/bdw_sim.log
+Operating system Centos 7,
+ GCC 7.3.0,
+ and Cadence NC/IUS 15.20
+are a supported combination.
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+Loading snapshot worklib.top:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+*** Registering Hub PLI1.0 Interface***
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> run
+
+        SystemC 2.3.1-Accellera --- Feb 14 2019 12:08:38
+        Copyright (c) 1996-2014 by all Contributors,
+        ALL RIGHTS RESERVED
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.12-s100
+
+Info: (I804) /IEEE_Std_1666/deprecated: deprecated constructor: sc_time(uint64,bool)
+Latency for sample 0 is 161
+Testbench write thread read 1 values. Average latency 162.
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+Simulation stopped via $stop(1) at time 892600 PS + 0
+./bdw_work/sims/top_V_PIPE_UNROLL.v:72 		#100 $stop;
+ncsim> quit
+Total run time = 860 ns
+BDW_SIM_CONFIG_DIR=bdw_work/sims/V_PIPE_UNROLL make saySimPassed 2>&1 | tee -a bdw_work/sims/V_PIPE_UNROLL/bdw_sim.log

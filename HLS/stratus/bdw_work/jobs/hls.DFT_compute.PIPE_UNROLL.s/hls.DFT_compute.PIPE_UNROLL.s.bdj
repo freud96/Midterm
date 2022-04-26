@@ -1,0 +1,12 @@
+23133
+23136
+ws45
+bdw_work/trace/hls.DFT_compute.PIPE_UNROLL.s.trace
+2
+0
+0
+0
+1650855764
+1650855903
+/usr/cadtool/cadence/STRATUS/cur/bin/stratus_hls --logfile=stratus_hls.log -I. -Ibdw_work/wrappers -I/usr/cadtool/cadence/STRATUS/cur/share/stratus/include --tl=/usr/cadtool/cadence/STRATUS/cur/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib --clock_period=5.000 --default_input_delay=0.100 --dpopt_auto=off --dpopt_with_enable=off --message_detail=3 -DPIPE_UNROLL=1 -DBDW_RTL_DFT_compute_PIPE_UNROLL=1 -Ibdw_work/libs/cynw_cm_float/c_parts -I/usr/cadtool/cadence/STRATUS/cur/share/stratus/cynware/cynw_cm_float/c_parts -d bdw_work/modules/DFT_compute/PIPE_UNROLL -o DFT_compute_rtl.cpp --hls_module=DFT_compute --hls_config=PIPE_UNROLL --project=project.tcl -P bdw_work/libs/cynw_cm_float/c_parts -P /usr/cadtool/cadence/STRATUS/cur/share/stratus/cynware/cynw_cm_float/c_parts -p cynw_cm_float ../DFT_compute.cpp
+

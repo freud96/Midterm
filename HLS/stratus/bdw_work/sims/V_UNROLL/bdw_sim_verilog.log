@@ -1,0 +1,74 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Apr 25, 2022 at 10:43:22 CST
+irun
+	+nc64bit
+	+incdir+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib
+	+incdir+bdw_work/wrappers
+	+access+rw
+	+loadpli1=/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
+	+ncinput+bdw_work/sims/V_UNROLL/ncverilog.do
+	+nclibdirname+bdw_work/sims/V_UNROLL
+	-f bdw_work/sims/V_UNROLL/siminfo
+		bdw_work/sims/top_V_UNROLL.v
+		bdw_work/wrappers/DFT_compute_cosim.v
+		bdw_work/modules/DFT_compute/UNROLL/DFT_compute_rtl.v
+		bdw_work/modules/DFT_compute/UNROLL/v_rtl/DFT_compute_cynw_cm_float_cos_E8_M23_0.v
+		bdw_work/modules/DFT_compute/UNROLL/v_rtl/DFT_compute_cynw_cm_float_sin_E8_M23_0.v
+		bdw_work/modules/DFT_compute/UNROLL/v_rtl/DFT_compute_cynw_cm_float_div_ieee_E8_M23_0.v
+		bdw_work/modules/DFT_compute/UNROLL/v_rtl/DFT_compute_cynw_cm_float_mul_E8_M23_1.v
+		bdw_work/modules/DFT_compute/UNROLL/v_rtl/DFT_compute_cynw_cm_float_add2_E8_M23_1.v
+		bdw_work/modules/DFT_compute/UNROLL/v_rtl/DFT_compute_RAM_8X1_1.v
+		bdw_work/modules/DFT_compute/UNROLL/v_rtl/DFT_compute_RAM_8X23_3.v
+		bdw_work/modules/DFT_compute/UNROLL/v_rtl/DFT_compute_RAM_8X8_2.v
+		-y bdw_work/libs/cynw_cm_float/v_rtl
+	+libext+.v
+	+define+ioConfig
+	+define+BDW_RTL_DFT_compute_UNROLL
+	+nowarn+LIBNOU
+	+hubSetOption+libdef=bdw_work/sims/V_UNROLL/sim_V_UNROLL.so,argv=out.txt
+	+hubSetOption+bdr=bdw_work/sims/V_UNROLL/sim.bdr
+	-l bdw_work/sims/V_UNROLL/bdw_sim_verilog.log
+
+   User defined plus("+") options:
+	+hubSetOption+libdef=bdw_work/sims/V_UNROLL/sim_V_UNROLL.so,argv=out.txt
+	+hubSetOption+bdr=bdw_work/sims/V_UNROLL/sim.bdr
+
+Recompiling... reason: file './bdw_work/modules/DFT_compute/UNROLL/DFT_compute_rtl.v' is newer than expected.
+	expected: Sun Apr 24 15:49:38 2022
+	actual:   Mon Apr 25 10:42:57 2022
+file: bdw_work/modules/DFT_compute/UNROLL/v_rtl/DFT_compute_RAM_8X8_2.v
+ncvlog: *W,LIBNOF: Library file or directory "bdw_work/libs/cynw_cm_float/v_rtl" does not exist.
+ncvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+*** Registering Hub PLI1.0 Interface***
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 14      11
+		Registers:              556     550
+		Scalar wires:          1663       -
+		Vectored wires:         185       -
+		Always blocks:          428     425
+		Initial blocks:           8       8
+		Cont. assignments:      499    1617
+		Pseudo assignments:      51      51
+		Simulation timescale:   1ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+*** Registering Hub PLI1.0 Interface***
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> run
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.12-s100
+Simulation stopped via $stop(1) at time 842600 PS + 0
+./bdw_work/sims/top_V_UNROLL.v:72 		#100 $stop;
+ncsim> quit
+TOOL:	irun(64)	15.20-s084: Exiting on Apr 25, 2022 at 10:43:24 CST  (total: 00:00:02)

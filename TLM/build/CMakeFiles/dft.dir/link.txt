@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -Wall -pedantic -D CLOCK_PERIOD=2.0  -rdynamic CMakeFiles/dft.dir/DFT_compute.cpp.o CMakeFiles/dft.dir/Initiator.cpp.o CMakeFiles/dft.dir/Testbench.cpp.o CMakeFiles/dft.dir/main.cpp.o CMakeFiles/dft.dir/tlm_log.cpp.o  -o dft  -Wl,-rpath,/opt/systemc/lib /opt/systemc/lib/libsystemc.so.2.3.3 -pthread 

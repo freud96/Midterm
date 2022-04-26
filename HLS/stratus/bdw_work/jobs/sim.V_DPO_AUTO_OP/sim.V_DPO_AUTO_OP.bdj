@@ -1,0 +1,12 @@
+17565
+17568
+ws45
+bdw_work/trace/sim.V_DPO_AUTO_OP.trace
+2
+0
+0
+0
+1650788190
+1650788296
+make --no-print-directory -f Makefile CWBExec=1 sim_V_DPO_AUTO_OP
+

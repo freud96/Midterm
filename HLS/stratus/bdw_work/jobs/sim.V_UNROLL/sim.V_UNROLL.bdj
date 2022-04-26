@@ -1,0 +1,12 @@
+12233
+12238
+ws45
+bdw_work/trace/sim.V_UNROLL.trace
+2
+0
+0
+0
+1650854438
+1650854605
+make --no-print-directory -f Makefile CWBExec=1 sim_V_UNROLL
+

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<netlist>
+	<module_name>computation</module_name>
+	<signal>
+		<name>BITRANGE_N15603</name>
+		<source_loc>20507</source_loc>
+		<async/>
+	</signal>
+	<assign>
+		<name>drive_BITRANGE_N15603</name>
+		<lhs>
+			<name>BITRANGE_N15603</name>
+		</lhs>
+		<rhs>
+			<name>DFT_compute_Add_3Ux1U_4U_4_49_out1</name>
+		</rhs>
+	</assign>
+</netlist>

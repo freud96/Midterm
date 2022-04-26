@@ -1,0 +1,5 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(24Apr2022:16:18:12):( irun +nc64bit +incdir+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib +incdir+bdw_work/wrappers +access+rw +loadpli1=/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap +ncinput+bdw_work/sims/V_DPO_AUTO_OP/ncverilog.do +nclibdirname+bdw_work/sims/V_DPO_AUTO_OP -f bdw_work/sims/V_DPO_AUTO_OP/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_DFT_compute_DPO_AUTO_OP +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/V_DPO_AUTO_OP/sim_V_DPO_AUTO_OP.so,argv=out.txt +hubSetOption+bdr=bdw_work/sims/V_DPO_AUTO_OP/sim.bdr -l bdw_work/sims/V_DPO_AUTO_OP/bdw_sim_verilog.log )

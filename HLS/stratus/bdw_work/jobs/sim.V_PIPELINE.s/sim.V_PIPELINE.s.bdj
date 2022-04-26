@@ -1,0 +1,12 @@
+4841
+4846
+ws45
+bdw_work/trace/sim.V_PIPELINE.s.trace
+2
+0
+0
+0
+1650781691
+1650781693
+/usr/cadtool/cadence/STRATUS/cur/bin/hub_ncverilog -f bdw_work/sims/V_PIPELINE/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_DFT_compute_PIPELINE +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/V_PIPELINE/sim_V_PIPELINE.so,argv=out.txt +hubSetOption+bdr=bdw_work/sims/V_PIPELINE/sim.bdr -l bdw_work/sims/V_PIPELINE/bdw_sim_verilog.log
+

@@ -1,0 +1,21 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
++nc64bit
++incdir+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib
++incdir+bdw_work/wrappers
++access+rw
++loadpli1=/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
++ncinput+bdw_work/sims/V_DPO_INLINE/ncverilog.do
++nclibdirname+bdw_work/sims/V_DPO_INLINE
+-f
+bdw_work/sims/V_DPO_INLINE/siminfo
++libext+.v
++define+ioConfig
++define+BDW_RTL_DFT_compute_DPO_INLINE
++nowarn+LIBNOU
++hubSetOption+libdef=bdw_work/sims/V_DPO_INLINE/sim_V_DPO_INLINE.so,argv=out.txt
++hubSetOption+bdr=bdw_work/sims/V_DPO_INLINE/sim.bdr
+-l
+bdw_work/sims/V_DPO_INLINE/bdw_sim_verilog.log

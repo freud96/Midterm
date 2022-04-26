@@ -1,0 +1,12 @@
+26553
+26557
+ws45
+bdw_work/trace/sim.V_PIPE_UNROLL.trace
+2
+0
+0
+0
+1650857227
+1650857249
+make --no-print-directory -f Makefile CWBExec=1 sim_V_PIPE_UNROLL
+

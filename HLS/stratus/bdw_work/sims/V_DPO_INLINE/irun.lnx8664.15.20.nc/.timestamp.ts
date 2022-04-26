@@ -1,0 +1,12 @@
+1650784141 /home/m110/m110061422/EE6470/mid_v3/stratus/bdw_work/sims/top_V_DPO_INLINE.v
+1650855285 /home/m110/m110061422/EE6470/mid_v3/stratus/bdw_work/modules/DFT_compute/DPO_INLINE/v_rtl/DFT_compute_cynw_cm_float_mul_E8_M23_1.v
+1650855285 /home/m110/m110061422/EE6470/mid_v3/stratus/bdw_work/modules/DFT_compute/DPO_INLINE/v_rtl/DFT_compute_cynw_cm_float_div_ieee_E8_M23_0.v
+1650855285 /home/m110/m110061422/EE6470/mid_v3/stratus/bdw_work/modules/DFT_compute/DPO_INLINE/v_rtl/DFT_compute_cynw_cm_float_cos_E8_M23_0.v
+1650855286 /home/m110/m110061422/EE6470/mid_v3/stratus/bdw_work/modules/DFT_compute/DPO_INLINE/v_rtl/DFT_compute_RAM_8X23_3.v
+1650855285 /home/m110/m110061422/EE6470/mid_v3/stratus/bdw_work/modules/DFT_compute/DPO_INLINE/v_rtl/DFT_compute_cynw_cm_float_add2_E8_M23_1.v
+1650855020 /home/m110/m110061422/EE6470/mid_v3/stratus/bdw_work/modules/DFT_compute/DPO_INLINE/v_rtl/DFT_compute_cynw_cm_float_add2_E8_M23_0.v
+1650855286 /home/m110/m110061422/EE6470/mid_v3/stratus/bdw_work/modules/DFT_compute/DPO_INLINE/v_rtl/DFT_compute_RAM_8X8_2.v
+1650855286 /home/m110/m110061422/EE6470/mid_v3/stratus/bdw_work/modules/DFT_compute/DPO_INLINE/v_rtl/DFT_compute_RAM_8X1_1.v
+1650855285 /home/m110/m110061422/EE6470/mid_v3/stratus/bdw_work/modules/DFT_compute/DPO_INLINE/v_rtl/DFT_compute_cynw_cm_float_sin_E8_M23_0.v
+1650770080 /home/m110/m110061422/EE6470/mid_v3/stratus/bdw_work/wrappers/DFT_compute_cosim.v
+1650855286 /home/m110/m110061422/EE6470/mid_v3/stratus/bdw_work/modules/DFT_compute/DPO_INLINE/DFT_compute_rtl.v

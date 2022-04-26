@@ -1,0 +1,12 @@
+19324
+19328
+ws45
+bdw_work/trace/sim.V_DPO_AUTO_OP.s.trace
+2
+0
+0
+0
+1650788292
+1650788295
+/usr/cadtool/cadence/STRATUS/cur/bin/hub_ncverilog -f bdw_work/sims/V_DPO_AUTO_OP/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_DFT_compute_DPO_AUTO_OP +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/V_DPO_AUTO_OP/sim_V_DPO_AUTO_OP.so,argv=out.txt +hubSetOption+bdr=bdw_work/sims/V_DPO_AUTO_OP/sim.bdr -l bdw_work/sims/V_DPO_AUTO_OP/bdw_sim_verilog.log
+
