@@ -19,7 +19,7 @@ Midterm Project report
 
 
 **Synthesis result**
-    For one vector input, we conducted different type of hardware optimizations, Loop unrolling, Loop pipelining, and Dpopt; for loop unrolling we applied it to almost every where there is a loop while Pipelining could be only apply to the first stage of the design. Following table at (link) shows the total simulated time and area gotten for each optimization type and basic. 
+    For one vector input, we conducted different type of hardware optimizations, Loop unrolling, Loop pipelining, and Dpopt; for loop unrolling we applied it to almost every where there is a loop while Pipelining could be only apply to the first stage of the design. Following table at (https://github.com/freud96/Midterm/blob/main/Result.JPG shows the total simulated time and area gotten for each optimization type and basic. 
     As it can be seen, the smaller area is DPA, while BASIC's becomes second to it. Pipelining although lowered the total running time, it could not be lower than unrolling which in our case shows a better performance. We should also note that everything in the design has more or less an important impact on the latency and area. The main reason why unrolling shows better perfomance than all it's because we're having floating point as data type, therefore it requires additional stalling if we want to optimize it by constraining the latency. The fact that latency constraint was not applied plays a big role in the slowness of Dpopt, as well as Pipeline  together with unrolling, which would have been different if the data we were dealing with was Fixed point. 
     The problem we had with Fixed point was the accuracy of the output complex vector was low. Hence, we leave this for future work. 
 
